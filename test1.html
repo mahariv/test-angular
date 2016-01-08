@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src ="angular.min.js"> </script>
+		<script type="text/javascript" src="test.js"></script>
+	</head>	
+	<body ng-app="myApp">
+	
+		<div ng-controller ="controller1">
+		<input type ="button" ng-click="onClick()" value="Click me"></input>
+		{{message}}
+			
+		</div>
+		<div ng-controller ="controller2">
+		<input type ="button" ng-click="onClick()" value="Click me 2"></input>
+			{{message}}
+		</div>
+
+		<div ng-controller ="controller3">
+		<input type ="button" ng-click="onClick()" value="Show click"></input>
+			<div ng-show= "showmessage">{{message}}</div>
+		</div>
+	
+	
+	</body>
+
+</html>
